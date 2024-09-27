@@ -1,0 +1,30 @@
+<%- include('formate.ejs') %>
+    <div class="container mt-2">
+        <div class="p-2 text-center header">
+            User Data display
+        </div>
+        <div class="text-center mt-2">
+            <a href="http://localhost:8080/posts/new">
+                <button type="submit" class="btn btn-primary">Add Data</button>
+            </a>
+        </div>
+        <div class="mx-auto w-50">
+            <% for( post of posts){ %>
+                <div class="my-3 card-body d-flex">
+                    <div class="me-5 flex-fill">
+                        Name:
+                        <%=post.name%>
+                    </div>
+                    <a href="http://localhost:8080/posts/<%=post.id%>" class="me-2">
+                        <button type="submit" class="btn btn-primary">Details</button>
+                    </a>
+                    <a href="http://localhost:8080/posts/<%=post.id%>/edit" class="me-2">
+                        <button type="submit" class="btn btn-primary">Edit</button>
+                    </a>
+                    <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+                        <button type="submit" class="btn btn-primary">Delete</button>
+                    </form>
+                </div>
+                <%}%>
+        </div>
+    </div>

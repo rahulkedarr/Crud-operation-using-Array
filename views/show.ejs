@@ -1,0 +1,28 @@
+
+<%- include('formate.ejs') %>
+    <div class="container mt-2">
+        <div class="p-2 text-center header">
+            User Details
+        </div>
+        <div class="text-center mt-2">
+            <a href="http://localhost:8080/posts">
+                <button type="submit" class="btn btn-primary">Back</button>
+            </a>
+        </div>
+        <div class="mx-auto w-50">
+            <div class=" card card-body my-3">
+                <div>Id:
+                    <%=post.id%>
+                </div>
+                <div>Name:
+                    <%=post.name%>
+                </div>
+                <div>Email:
+                    <%=post.email%>
+                </div>
+                <div>Mobile Number:
+                    <%=post.phone%>
+                </div>
+            </div>
+        </div>
+    </div>

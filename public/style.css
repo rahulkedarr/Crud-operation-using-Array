@@ -1,0 +1,12 @@
+.card-body{
+background-color: rgb(194, 238, 238);
+div{
+    margin:5px;
+    
+}
+}
+.header{
+    background-color: rgb(6, 99, 99);
+    color: white;
+    font-weight: 700;
+}

@@ -1,0 +1,15 @@
+<%- include('formate.ejs') %>
+<div class="container m-5">
+    <form  method="post" action="/posts">
+        <div class="mb-3">
+          <input type="text" name="name" placeholder="enter username">
+        </div>
+        <div class="mb-3">
+        <input type="email" name="email" placeholder="enter email">
+        </div>
+        <div class="mb-3">
+            <input type="tel" name="phone" placeholder="enter mobile number" maxlength="10">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
